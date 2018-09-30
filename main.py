@@ -4,14 +4,14 @@ import asyncio
 import time
 import os
 
-client = commands.Bot(command_prefix = "!")
+bot = commands.Bot(command_prefix = "!")
 token = os.environ["token"]
 
-@client.event
+@bot.event
 async def on_ready():
     print("bot is ready")
-@client.event
+@bot.event
 async def on_message(message):
     if message.content == "cookie":
-        await Bot.send_message(message.channel, ":cookie:")
-client.run (token)
+        await bot.send_message(message.channel, ":cookie:")
+bot.run (token)
