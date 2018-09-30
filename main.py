@@ -19,7 +19,7 @@ async def on_message(message):
 async def on_message(message):
     if message.content == "cookie":
         await message.channel.send(":cookie:")
-    if "cookie" in message.content.split():
+    elif "cookie" in message.content.split():
         await message.channel.send(":cookie:")
         
 bot.run(token)
