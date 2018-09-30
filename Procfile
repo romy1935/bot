@@ -1,1 +1,1 @@
-worker: python lolibot.py
+worker: python main.py
