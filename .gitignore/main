@@ -1,0 +1,20 @@
+import discord
+from discord.ext import commands
+from discord.ext import bot
+import asyncio
+import time
+import os
+
+Client = discord.Client ()
+client = commands.Bot(command_prefix = "!")
+token = ("MzkyMDEyMjM1NTgyNjAzMjc1.DpJDPw.QcFLQ8HCEs9kI3DRwwJJJE23Hns"
+
+@client.event
+async def on_ready():
+    print("bot is ready")
+@client.event
+async def on_message(message):
+    if message.content == "cookie":
+        await client.send_message (message.channel, ":cookie:")
+
+client.run (token)
