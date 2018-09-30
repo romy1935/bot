@@ -18,6 +18,6 @@ async def on_message(message):
 @bot.event
 async def on_message(message):
     if "cookie" in message.content.split():
-        await message.add_reaction("🍪")
+        await message.add_reaction(":cookie:")
 
 bot.run (token)
