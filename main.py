@@ -13,5 +13,5 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content == "cookie":
-        await bot.send_message(message.channel, ":cookie:")
+        await Bot.send_message(message.channel, ":cookie:")
 client.run (token)
