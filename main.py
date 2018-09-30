@@ -5,7 +5,7 @@ import time
 import os
 
 client = commands.Bot(command_prefix = "!")
-token = os environ ["token"]
+token = os.environ["token"]
 
 @client.event
 async def on_ready():
