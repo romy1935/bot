@@ -24,7 +24,7 @@ async def on_message(message):
     elif ":blobnomcookie:" in message.content():
         await message.channel.send(":cookie:")
     args = message.content.split()
-    if "gimme" in args and "cookie" in args:
+    elif "gimme" in args and "cookie" in args:
         await message.add_reaction("🍪")
 
 
