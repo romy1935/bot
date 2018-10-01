@@ -5,7 +5,7 @@ import time
 import os
 
 bot = commands.Bot(command_prefix="!")
-token = os environ["token"]
+token = os.environ["token"]
 
 
 @bot.event
