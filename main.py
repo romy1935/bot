@@ -14,6 +14,8 @@ async def on_ready():
 @bot.event
 async def on_message(message):
     if message.content == "kms":
-        await bot.send_message(message.channel, "pls do")
+        await message.channel.send("pls do")
+    elif "cookie" in message.content.split():
+        await message.channel.send(":cookie:")
 
 bot.run(token)
