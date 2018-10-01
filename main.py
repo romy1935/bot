@@ -17,14 +17,14 @@ async def on_ready():
 async def on_message(message):
     if message.content == "kms":
         await message.channel.send("pls do")
-    elif "cookie" in message.content.():
+    elif "cookie" in message.content():
         await message.channel.send(":cookie:")
-    elif ":cookie:" in message.content.():
+    elif ":cookie:" in message.content():
         await message.channel.send(":cookie:")
     elif ":blobnomcookie:" in message.content():
         await message.channel.send(":cookie:")
     args = message.content.split()
-    elif "gimme" in args and "cookie" in args:
+    if "gimme" in args and "cookie" in args:
         await message.add_reaction("🍪")
 
 
