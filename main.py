@@ -13,7 +13,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    if message.content == "cookie":
-        await bot.send_message(message.channel, ":cookie:")
+    if message.content == "kms":
+        await bot.send_message(message.channel, "pls do")
 
 bot.run(token)
