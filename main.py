@@ -10,14 +10,10 @@ token = os.environ["token"]
 @bot.event
 async def on_ready():
     print("bot is ready")
+
 @bot.event
 async def on_message(message):
     if message.content == "cookie":
         await bot.send_message(message.channel, ":cookie:")
 
-@bot.event
-async def on_message(message):
-    if message.content == "cookie":
-        await message.channel.send(":cookie:")
-        
 bot.run(token)
