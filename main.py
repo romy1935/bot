@@ -17,5 +17,8 @@ async def on_message(message):
         await message.channel.send("pls do")
     elif "cookie" in message.content.split():
         await message.channel.send(":cookie:")
+args = message.content.split()
+    if "was" in args and "given" in args:
+        await message.channel.send("::")
 
 bot.run(token)
