@@ -21,7 +21,7 @@ async def on_message(message):
         await bot.send_message(message.channel, ":cookie:")
     args = message.content.split()
     if "gimme" in args and "cookie" in args:
-        await client.add_reaction(message, "🍪")
+        await bot.add_reaction(message, "🍪")
 
 
 bot.run(token)
