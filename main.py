@@ -30,6 +30,6 @@ async def on_message(message):
 
 @bot.command()
 async def git():
-    await bot.say("**The github repository of the bot:**\nhttps://www.github.com/Romy1935/bot")
+    await bot.say("**My Github:**\nhttps://www.github.com/Romy1935/bot")
     
 bot.run(token)
