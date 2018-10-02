@@ -25,7 +25,7 @@ async def on_message(message):
         await bot.add_reaction(message, "💖")
     args = message.content.split()
     if "trap" in args:
-        await bot.add_reaction(message, "<:blobaww:357967083960795137>")
+        await bot.add_reaction(message, "🍆")
 
 
 bot.run(token)
