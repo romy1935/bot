@@ -26,9 +26,10 @@ async def on_message(message):
     args = message.content.split()
     if "trap" in args:
         await bot.add_reaction(message, "🍆")
+        await bot.process_commands(message)
 
 @bot.command()
 async def git():
-    await bot.process_commands("**The github repository of the bot:**\nhttps://www.github.com/Romy1935/bot")
+    await bot.say("**The github repository of the bot:**\nhttps://www.github.com/Romy1935/bot")
     
 bot.run(token)
