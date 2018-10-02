@@ -17,11 +17,15 @@ async def on_ready():
 async def on_message(message):
     if message.content == "kms":
         await bot.send_message(message.channel, "pls do")
-    elif "cookie" in message.content.split():
-        await bot.send_message(message.channel, ":cookie:")
     args = message.content.split()
     if "gimme" in args and "cookie" in args:
         await bot.add_reaction(message, "🍪")
+    args = message.content.split()
+    if "was" in args and "given" in args:
+        await bot.add_reaction(message, "💖")
+    args = message.content.split()
+    if "trap" in args:
+        await bot.add_reaction(message, "<:blobaww:357967083960795137>")
 
 
 bot.run(token)
