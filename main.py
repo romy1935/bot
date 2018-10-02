@@ -4,7 +4,7 @@ import asyncio
 import time
 import os
 
-bot = commands.Bot(command_prefix=?")
+bot = commands.Bot(command_prefix="(")
 token = os.environ["token"]
 bot.remove_command("help")
 
