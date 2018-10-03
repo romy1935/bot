@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from data.Renge import renge_images
+import random
 import asyncio
 import time
 import os
@@ -33,8 +34,10 @@ async def git():
     await bot.say("**My Github:**\nhttps://www.github.com/Romy1935/bot")
     
 @bot.command()
+
+foo = ['🏓 Pong! I win!', '🏓 Pong! I win!', '🏓 Pong! I win!', '🏓 Pong! I win!', '🏓 ono you won']
 async def ping():
-    await bot.say("🏓 Pong! I win!")
+    await bot.say(foo)
     
 @bot.command()
 async def say(message):
