@@ -34,9 +34,8 @@ async def git():
     await bot.say("**My Github:**\nhttps://www.github.com/Romy1935/bot")
     
 @bot.command()
-
-foo = ['🏓 Pong! I win!', '🏓 Pong! I win!', '🏓 Pong! I win!', '🏓 Pong! I win!', '🏓 ono you won']
 async def ping():
+    foo = ['🏓 Pong! I win!', '🏓 Pong! I win!', '🏓 Pong! I win!', '🏓 Pong! I win!', '🏓 ono you won']
     await bot.say(foo)
     
 @bot.command()
