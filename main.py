@@ -36,7 +36,8 @@ async def git():
 @bot.command()
 async def ping():
     foo = ["🏓 Pong! I win!", "🏓 Pong! I win!", "🏓 Pong! I win!", "🏓 Pong! I win!", "🏓 ono you won"]
-    await bot.say(foo)
+    moo = (random.choice(foo))
+    await bot.say(moo)
     
 @bot.command()
 async def say(message):
