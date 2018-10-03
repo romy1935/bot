@@ -37,6 +37,6 @@ async def renge():
     output = random.sample(renge_images, 1)
     em = discord.Embed(Title="Nyanpasu~", Color=#FBC1F0)
     em.set_image(url=output[0])
-    await bot.say(em=Embed)
+    await bot.say(em=embed)
     
 bot.run(token)
