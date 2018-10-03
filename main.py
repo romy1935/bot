@@ -28,8 +28,4 @@ async def on_message(message):
         await bot.add_reaction(message, "🍆")
     await bot.process_commands(message)
 
-@bot.command()
-async def git():
-    await bot.say("**My Github:**\nhttps://www.github.com/Romy1935/bot")
-    
 bot.run(token)
