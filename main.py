@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from pictures import renge_images
 import asyncio
 import time
 import os
