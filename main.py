@@ -45,4 +45,5 @@ async def say(message):
     em.set_image(url=output)
     await bot.say(embed=em)
     
+    
 bot.run(token)
