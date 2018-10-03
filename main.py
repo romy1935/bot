@@ -33,9 +33,6 @@ async def git():
     await bot.say("**My Github:**\nhttps://www.github.com/Romy1935/bot")
     
 @bot.command()
-async def git():
-    await bot.say("**My Github:**\nhttps://www.github.com/Romy1935/bot")
-@bot.command()
 async def say(message):
     output = random.sample(sloth_images, 1)
     em = discord.Embed(title="Nyanapsu~", colour=0xFBC1F0)
