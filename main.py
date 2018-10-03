@@ -13,7 +13,6 @@ bot.remove_command("help")
 async def on_ready():
     print("bot is ready")
 
-
 @bot.event
 async def on_message(message):
     if message.content == "kms":
