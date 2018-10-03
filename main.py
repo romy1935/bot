@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from pictures import renge_images
+from data.pictures import renge_images
 import asyncio
 import time
 import os
@@ -32,5 +32,9 @@ async def on_message(message):
 @bot.command()
 async def git():
     await bot.say("**My Github:**\nhttps://www.github.com/Romy1935/bot")
+@bot.command()
+async def renge():
+    output = random.sample(renge_images, 1)
+    await bot.say(output)
     
 bot.run(token)
