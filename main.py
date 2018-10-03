@@ -31,12 +31,4 @@ async def on_message(message):
 @bot.command()
 async def git():
     await bot.say("**My Github:**\nhttps://www.github.com/Romy1935/bot")
-    
-@bot.command()
-async def renge():
-    output = random.sample(renge_images, 1)
-    em = discord.Embed(Title="Nyanpasu~", Color=#FBC1F0)
-    em.set_image(url=output[0])
-    await bot.say(em=embed)
-    
 bot.run(token)
