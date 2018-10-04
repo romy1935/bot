@@ -41,10 +41,11 @@ async def ping():
     
 @bot.command()
 async def renge(message):
-    output = random.sample(sloth_images, 1)
-    em = discord.Embed(title="Nyanapsu~", colour=0xFBC1F0)
+    output = random.sample(renge_images, 1)
+    em = discord.Embed(title="Nyanpasu~", colour=0xFBC1F0)
     em.set_image(url=output[0])
     await bot.say(embed=em)
+
     
     
 bot.run(token)
