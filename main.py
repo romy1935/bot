@@ -40,7 +40,7 @@ async def ping():
     await bot.say(moo)
     
 @bot.command()
-async def say(message):
+async def renge(message):
     output = random.sample(sloth_images, 1)
     em = discord.Embed(title="Nyanapsu~", colour=0xFBC1F0)
     em.set_image(url=output)
