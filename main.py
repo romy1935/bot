@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from data.Renge import renge_images
+from data.traps import trap_images
 import random
 import asyncio
 import time
@@ -43,6 +44,13 @@ async def ping():
 async def renchon():
     output = random.sample(renge_images, 1)
     em = discord.Embed(title="Nyanpasu~", colour=0xFBC1F0)
+    em.set_image(url=output[0])
+    await bot.say(embed=em)
+    
+@bot.command()
+async def trap():
+    output = random.sample(trap_images, 1)
+    em = discord.Embed(title="Have a trap", colour=0xFBC1F0)
     em.set_image(url=output[0])
     await bot.say(embed=em)
 
