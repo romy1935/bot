@@ -54,6 +54,12 @@ async def trap():
     em.set_image(url=output[0])
     await bot.say(embed=em)
 
+@bot.command()
+async def traps():
+    output = random.sample(trap_images, 2)
+    em = discord.Embed(title="Have lots of traps", colour=0xFBC1F0)
+    em.set_image(url=output[0])
+    await bot.say(embed=em)
     
     
 bot.run(token)
