@@ -11,4 +11,5 @@ renge_images = ["https://i.imgur.com/Kev8f0x.jpg", "https://i.imgur.com/F8XWB4p.
                 "https://i.imgur.com/DJOPNb2.jpg", "https://i.imgur.com/4xnHqA3.jpg", "https://i.imgur.com/r2SWTHJ.jpg",
                 "https://i.imgur.com/QQEKaeY.jpg", "https://i.imgur.com/LaHjDgN.jpg", "https://i.imgur.com/EAubf2y.jpg",
                 "https://i.imgur.com/tM91xLt.jpg", "https://i.imgur.com/1kxG1f8.jpg", "https://i.imgur.com/84llUuH.jpg",
-                "https://i.imgur.com/hytwVUc.jpg", "https://i.imgur.com/AMBcVJU.jpg", "https://i.imgur.com/oAZ7leL.jpg"]
+                "https://i.imgur.com/hytwVUc.jpg", "https://i.imgur.com/AMBcVJU.jpg", "https://i.imgur.com/oAZ7leL.jpg"
+                ]
