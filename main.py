@@ -43,7 +43,7 @@ async def renchon():
     await bot.say(embed=em)
 
 poo = ["1", "2", "3"]
-    shoo = (random.choice(poo))
+shoo = (random.choice(poo))
 @bot.command()
 async def renchonbomb():
     while shoo < 6:
