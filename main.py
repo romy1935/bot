@@ -43,7 +43,7 @@ async def renchon():
     await bot.say(embed=em)
 
 @bot.command()
-async def renchons():
+async def renchonbomb():
     i = 1
     while i < 6:
         output = random.sample(renge_images, 1)
