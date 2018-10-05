@@ -52,5 +52,4 @@ async def renchonbomb():
         await bot.say(embed=em)
         i += 1
     
-    
 bot.run(token)
