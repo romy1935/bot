@@ -56,10 +56,10 @@ async def renchonbomb():
 @bot.command()
 async def help():
     em = discord.Embed(title="My commands:", colour=0xFBC1F0)
-    em.add_field(name="<git", value="shows my github", inline=False)
-    em.add_field(name="<ping", value="you can play ping pong with me!", inline=False)
-    em.add_field(name="<renchon", value="shows a pick of renge", inline=False)
-    em.add_field(name="<renchonbomb", value="shows lots of pics of renge", inline=False)
+    em.add_field(name="**git**", value="shows my github", inline=False)
+    em.add_field(name="**ping**", value="you can play ping pong with me!", inline=False)
+    em.add_field(name="**renchon**", value="shows a pick of renge!", inline=False)
+    em.add_field(name="**renchonbomb**", value="shows lots of pics of renge!", inline=False)
     await bot.say(embed=em)
     
 bot.run(token)
