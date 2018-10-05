@@ -44,12 +44,22 @@ async def renchon():
 
 @bot.command()
 async def renchonbomb():
-    i = 1
-    while i < 6:
+    poo = ["1", "2", "3"]
+    shoo = (random.choice(poo))
+    while shoo < 6:
         output = random.sample(renge_images, 1)
         em = discord.Embed(title="Nyanpasu~", colour=0xFBC1F0)
         em.set_image(url=output[0])
         await bot.say(embed=em)
-        i += 1
+        poo += 1
+
+@bot.command()
+async def help():
+    em = discord.Embed(title="My commands:", colour=0xFBC1F0)
+    em.add_field(name="<git", value="shows my github")
+    em.add_field(name="<ping", value="you can play ping pong with me!")
+    em.add_field(name="<renchon", value="shows a pick of renge")
+    em.add_field(name="<renchonbomb", value="shows lots of pics of renge")
+    await bot.say(embed=em)
     
 bot.run(token)
