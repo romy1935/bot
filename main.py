@@ -49,11 +49,13 @@ async def renchon():
  
 @bot.command()
 async def renchons():
-    output = random.sample(renge_images, 1)
-    em = discord.Embed(title="Nyanpasu~", colour=0xFBC1F0)
-    em.set_image(url=output[0])
-    em.set_image(url=output[0])
-    await bot.say(embed=em)
+    i = 1
+    while i < 6:
+        output = random.sample(renge_images, 1)
+        em = discord.Embed(title="Nyanpasu~", colour=0xFBC1F0)
+        em.set_image(url=output[0])
+        await bot.say(embed=em)
+        i += 1
     
     
 bot.run(token)
