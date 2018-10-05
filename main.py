@@ -17,12 +17,13 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
+    args = message.content.split()
     if "gimme" in args and "cookie" in args:
         await bot.add_reaction(message, "🍪")
     args = message.content.split()
     if "was" in args and "given" in args:
         await bot.add_reaction(message, "💖")
-    args = message.content.split()
+
 #fie
 
 @bot.command()
