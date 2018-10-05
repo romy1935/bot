@@ -26,7 +26,7 @@ async def on_message(message):
     if "was" in args and "given" in args:
         await bot.add_reaction(message, "💖")
     args = message.content.split()
-
+#fie
 
 @bot.command()
 async def git():
