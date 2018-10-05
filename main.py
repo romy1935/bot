@@ -48,11 +48,10 @@ async def renchon():
     await bot.say(embed=em)
  
 @bot.command()
-async def traps():
+async def renchons():
     output = random.sample(renge_images, 2)
     em = discord.Embed(title="Nyanpasu~", colour=0xFBC1F0)
-    em.add_field(name=em, value="gay")
-    em.set_image(url=output[0])
+    em.set_image(url=output[2])
     await bot.say(embed=em)
     
     
