@@ -17,9 +17,6 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    if message.content == "kms":
-        await bot.send_message(message.channel, "ono")
-    args = message.content.split()
     if "gimme" in args and "cookie" in args:
         await bot.add_reaction(message, "🍪")
     args = message.content.split()
