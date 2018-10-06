@@ -45,7 +45,7 @@ async def pingpong():
     await bot.say(message.channel, "🏓 Ping!")
     await bot.say(message.channel, "🏓 Pong!")
     await bot.say(coo)
-    if coo = "🏓 Pong! I win!":
+    if coo == "🏓 Pong! I win!":
         me += 1
     else:
         you += 1
