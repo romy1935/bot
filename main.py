@@ -44,9 +44,10 @@ async def pingpong():
         await bot.say(coo)
         if coo == "🏓 Pong! I win!":
             me += 1
+            await bot.say(me)
         else:
             you += 1
-        await bot.say(me)
+            await bot.say(you)
     if me > you:
         await bot.say("I win!")
     else:
