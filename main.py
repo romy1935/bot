@@ -40,12 +40,12 @@ async def pingpong():
     you = 0
     hoo = ["🏓 Pong! I win!", "🏓 Pong! I win!", "🏓 ono you won"]
     coo = (random.choice(hoo))
-    await bot.say("🏓 Ping!")
-    await bot.say("🏓 Pong!")
-    await bot.say("🏓 Ping!")
-    await bot.say("🏓 Pong!")
-    await bot.say(coo)
-    while me > 6:
+    while me > 6:   
+        await bot.say("🏓 Ping!")
+        await bot.say("🏓 Pong!")
+        await bot.say("🏓 Ping!")
+        await bot.say("🏓 Pong!")
+        await bot.say(coo)
         if coo == "🏓 Pong! I win!":
             me += 1
         else:
