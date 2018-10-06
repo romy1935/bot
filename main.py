@@ -53,6 +53,7 @@ async def pingpong():
         await bot.say("You won!")
     
 @bot.command()
+
 async def renchon():
     output = random.sample(renge_images, 1)
     em = discord.Embed(title="Nyanpasu~", colour=0xFBC1F0)
