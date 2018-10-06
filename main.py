@@ -76,6 +76,7 @@ async def help():
     em.add_field(name="**ping**", value="you can play ping pong with me!", inline=False)
     em.add_field(name="**renchon**", value="shows a pick of renge!", inline=False)
     em.add_field(name="**renchonbomb**", value="shows lots of pics of renge!", inline=False)
+    em.add_field(name="**pingpong**", value="plays a game of pingpong", inline=False)
     await bot.say(embed=em)
     
 bot.run(token)
