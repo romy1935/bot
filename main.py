@@ -38,7 +38,7 @@ async def pingpong():
     you = 0
     hoo = ["🏓 Pong! I win!", "🏓 Pong! I win!", "🏓 ono you won", "🏓 Pong! I win!"]
     coo = (random.choice(hoo))
-    while me or you < 3:   
+    while me < 3:   
         await bot.say("🏓 Ping!")
         await bot.say("🏓 Pong!")
         await bot.say("🏓 Ping!")
