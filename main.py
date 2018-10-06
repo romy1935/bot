@@ -48,7 +48,8 @@ async def pingpong():
             me += 1
         else:
             you += 1
-        await bot.say(me : you)
+        await bot.say(me)
+        await bot.say(you)
     
     
 @bot.command()
