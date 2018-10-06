@@ -38,7 +38,7 @@ async def pingpong():
     you = 0
     hoo = ["🏓 Pong! I win!", "🏓 Pong! I win!", "🏓 ono you won", "🏓 Pong! I win!"]
     coo = (random.choice(hoo))
-    while me < 3:   
+    while me or you < 3:   
         await bot.say("🏓 Ping!")
         await bot.say("🏓 Pong!")
         await bot.say("🏓 Ping!")
@@ -49,7 +49,10 @@ async def pingpong():
         else:
             you += 1
         await bot.say(me)
-    
+    if me > you:
+        await bot.say("I win!")
+    else:
+        await bot.say("You won!")
     
 @bot.command()
 async def renchon():
