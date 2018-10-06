@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 from data.Renge import renge_images
-from data.traps import trap_images
 import random
 import asyncio
 import time
