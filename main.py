@@ -36,9 +36,9 @@ async def ping():
 async def pingpong():
     me = 0
     you = 0
-    hoo = ["🏓 Pong! I win!", "🏓 Pong! I win!", "🏓 ono you won"]
-    coo = (random.choice(hoo))
-    while me < 3:   
+    while me < 3:
+        hoo = ["🏓 Pong! I win!", "🏓 Pong! I win!", "🏓 ono you won"]
+        coo = (random.choice(hoo))
         await bot.say("🏓 Ping!")
         await bot.say("🏓 Pong!")
         await bot.say(coo)
@@ -53,7 +53,6 @@ async def pingpong():
         await bot.say("You won!")
     
 @bot.command()
-
 async def renchon():
     output = random.sample(renge_images, 1)
     em = discord.Embed(title="Nyanpasu~", colour=0xFBC1F0)
