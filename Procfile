@@ -1,1 +1,1 @@
-worker: python Romybot.py
+worker: python main.py
